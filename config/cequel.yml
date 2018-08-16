@@ -1,0 +1,34 @@
+development:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: lk_development
+  max_retries: 3
+  retry_delay: 0.5
+  newrelic: false
+
+test:
+  host: '127.0.0.1'
+  port: 9042
+  keyspace: lk_test
+  max_retries: 3
+  retry_delay: 0.5
+  newrelic: false
+
+production:
+  hosts:
+    - '172.26.0.27'
+  port: 9042
+  keyspace: hotspot
+  username: 'hotspot'
+  password: '2eL7ZR3fRbVt'
+  max_retries: 3
+  retry_delay: 0.5
+  newrelic: true
+  replication:
+    class: SimpleStrategy
+    replication_factor: 1
+# replication:
+#   class: NetworkTopologyStrategy
+#   datacenter1: 3
+#   datacenter2: 2
+# durable_writes: false

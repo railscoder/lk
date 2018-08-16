@@ -17,6 +17,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'unicorn'
 gem 'dotenv'
+gem 'cequel'
+gem 'activemodel-serializers-xml'
 
 
 group :development, :test do
