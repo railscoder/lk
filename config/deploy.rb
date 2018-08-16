@@ -1,12 +1,12 @@
 # config valid only for current version of Capistrano
-lock "3.9.1"
+lock "3.11.0"
 
 set :application, "lk"
 set :repo_url, "https://github.com/Melchakovartem/lk.git"
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/manage/lk"
-set :deploy_user, "manage"
+set :deploy_to, "/home/maintain/lk"
+set :deploy_user, "maintain"
 
 # Default value for :linked_files is []
 append :linked_files, "config/database.yml"
